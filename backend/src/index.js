@@ -1,6 +1,6 @@
 
 //importando modulos necessarios
-const express = require('express');
+const express = require('express'); //Framework para sistema de roteamento
 const routes = require('./routes');
 const cors = require('cors');
 
@@ -14,4 +14,5 @@ app.use(routes);
 //necessario para utilizacao do formato json
 app.use(express.json());
 
+//porta da aplicacao
 app.listen(3333);
